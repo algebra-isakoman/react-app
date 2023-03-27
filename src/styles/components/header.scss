@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $header-background;
+
+  &__logo {
+    width: 5rem;
+  }
+
+  &__nav {
+    margin-right: 2rem;
+    display: flex;
+    &__item {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.25rem;
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $black;
+        transition: all 250ms ease;
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+}
