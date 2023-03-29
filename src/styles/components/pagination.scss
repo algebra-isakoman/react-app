@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+
+  &__arrow {
+    img {
+      width: 2rem;
+    }
+  }
+
+  &__item {
+    border: 1px solid $gray-light;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 250ms ease;
+
+    &:hover {
+      background-color: cadetblue;
+    }
+  }
+}
