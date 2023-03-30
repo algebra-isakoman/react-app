@@ -13,9 +13,18 @@ const App = () => {
       <Navigation />
 
       <div className="container">
-        <Button />
-        <Tags />
-        <Pagination />
+        <div className="container--component">
+          <h2>Button</h2>
+          <Button />
+        </div>
+        <div className="container--component">
+          <h2>Tags</h2>
+          <Tags />
+        </div>
+        <div className="container--component">
+          <h2>Pagination</h2>
+          <Pagination />
+        </div>
       </div>
     </div>
   );

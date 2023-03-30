@@ -1,19 +1,19 @@
-import iconLeft from "./../assets/icon-left.svg";
-import iconRight from "./../assets/icon-right.svg";
+import IconLeft from "../assets/icon-left";
+import IconRight from "../assets/icon-right";
 
 const Pagination = () => {
   return (
     <div className="pagination">
-      <div className="pagination__arrow">
-        <img src={iconLeft} alt="previous page" />
-      </div>
+      <span className="pagination__arrow pagination__arrow--first">
+        <IconLeft />
+      </span>
       <div className="pagination__item">1</div>
       <div className="pagination__item">2</div>
       <div className="pagination__item">3</div>
       <div className="pagination__item">4</div>
-      <div className="pagination__arrow">
-        <img src={iconRight} alt="next page" />
-      </div>
+      <span className="pagination__arrow pagination__arrow--last">
+        <IconRight />
+      </span>
     </div>
   );
 };
