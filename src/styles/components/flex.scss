@@ -1,0 +1,33 @@
+.flex {
+  border: 1px solid $black;
+  padding: 2rem;
+
+  &--first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      img {
+        display: block;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  &--second {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &--third {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+      display: block;
+      margin-right: 1rem;
+    }
+  }
+}
