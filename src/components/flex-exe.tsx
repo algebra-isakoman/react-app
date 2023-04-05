@@ -29,12 +29,6 @@ const FlexExe = () => {
         <img src="https://source.unsplash.com/random/150x150/?tesla" alt="" />
         <span>text</span>
       </div>
-
-      <div>
-        <div>awd</div>
-        <div>asdasd</div>
-        <button>test</button>
-      </div>
     </>
   );
 };

@@ -1,6 +1,8 @@
+import IconClose from "./assets/icon-close";
 import Button from "./components/button";
 import FlexExe from "./components/flex-exe";
 import Header from "./components/header";
+import Input from "./components/input";
 import Navigation from "./components/navigation";
 import Pagination from "./components/pagination";
 import Tags from "./components/tags";
@@ -16,8 +18,18 @@ const App = () => {
 
       <div className="container">
         <div className="container--component">
+          <h2>Input</h2>
+          <Input label="" />
+          <Input
+            label="Last name"
+            rounded={true}
+            validation="Ovo je validacija"
+          />
+        </div>
+
+        <div className="container--component">
           <h2>Button</h2>
-          <Button />
+          <Button value="Animate me" animate={true} icon={<IconClose />} />
         </div>
         <div className="container--component">
           <h2>Tags</h2>

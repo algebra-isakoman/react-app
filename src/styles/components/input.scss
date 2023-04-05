@@ -1,0 +1,10 @@
+.input {
+  padding: 0.5rem 1rem;
+  border: 1px solid $gray;
+  display: block;
+  margin-bottom: 1rem;
+
+  &--rounded {
+    border-radius: 0.5rem;
+  }
+}
