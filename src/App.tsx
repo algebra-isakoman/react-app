@@ -1,5 +1,6 @@
 import IconClose from "./assets/icon-close";
 import Button from "./components/button";
+import CardGrid from "./components/card-grid";
 import FlexExe from "./components/flex-exe";
 import Header from "./components/header";
 import Input from "./components/input";
@@ -46,6 +47,10 @@ const App = () => {
         <div className="container--component">
           <h2>Flex exercise</h2>
           <FlexExe />
+        </div>
+        <div className="container--component">
+          <h2>Responsive grid</h2>
+          <CardGrid />
         </div>
       </div>
     </div>

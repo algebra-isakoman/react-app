@@ -24,14 +24,20 @@
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 
-  span {
+  @media (min-width: $media-sm) {
+    width: unset;
+  }
+
+  &__icon {
     display: block;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   &:hover {
-    background-color: $green-light;
+    transform: scale(1.05);
   }
 
   //colors

@@ -33,7 +33,7 @@ const Button = ({
     <button
       className={`btn ${colorSwitcher(color)} ${animate ? "btn--animate" : ""}`}
     >
-      {icon}
+      {icon ? <span className="btn__icon">{icon}</span> : ""}
       <span>{value}</span>
     </button>
   );

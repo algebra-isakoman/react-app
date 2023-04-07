@@ -1,0 +1,40 @@
+.card {
+  background-color: $gray;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    @media (min-width: $media-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $media-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__img {
+    img {
+      width: 100%;
+      display: block;
+      height: 15rem;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    margin-top: 2rem;
+  }
+}

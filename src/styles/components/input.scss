@@ -3,6 +3,11 @@
   border: 1px solid $gray;
   display: block;
   margin-bottom: 1rem;
+  width: 100%;
+
+  @media (min-width: $media-sm) {
+    width: 15rem;
+  }
 
   &--rounded {
     border-radius: 0.5rem;
