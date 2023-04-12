@@ -1,6 +1,7 @@
 import IconClose from "./assets/icon-close";
 import Button from "./components/button";
 import CardGrid from "./components/card-grid";
+import CardGrid2 from "./components/card-grid-2";
 import FlexExe from "./components/flex-exe";
 import Header from "./components/header";
 import Input from "./components/input";
@@ -27,7 +28,6 @@ const App = () => {
             validation="Ovo je validacija"
           />
         </div>
-
         <div className="container--component">
           <h2>Button</h2>
           <Button value="Animate me" animate={true} icon={<IconClose />} />
@@ -51,6 +51,10 @@ const App = () => {
         <div className="container--component">
           <h2>Responsive grid</h2>
           <CardGrid />
+        </div>
+        <div className="container--component">
+          <h2>Responsive grid 2</h2>
+          <CardGrid2 />
         </div>
       </div>
     </div>
