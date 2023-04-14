@@ -1,62 +1,36 @@
-import IconClose from "./assets/icon-close";
-import Button from "./components/button";
-import CardGrid from "./components/card-grid";
-import CardGrid2 from "./components/card-grid-2";
-import FlexExe from "./components/flex-exe";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/header";
-import Input from "./components/input";
-import Navigation from "./components/navigation";
-import Pagination from "./components/pagination";
-import Tags from "./components/tags";
-import TransformExe from "./components/transform-exe";
+import Exe from "./pages/exe";
+import Home from "./pages/home";
+import Ispit from "./pages/ispit";
+import Mlinar from "./pages/mlinar";
 
 import "./styles/styles.scss";
 
 const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/ispit",
+      element: <Ispit />,
+    },
+    {
+      path: "/exe",
+      element: <Exe />,
+    },
+    {
+      path: "/mlinar",
+      element: <Mlinar />,
+    },
+  ]);
+
   return (
     <div className="App">
       <Header />
-      <Navigation />
-
-      <div className="container">
-        <div className="container--component">
-          <h2>Input</h2>
-          <Input label="" />
-          <Input
-            label="Last name"
-            rounded={true}
-            validation="Ovo je validacija"
-          />
-        </div>
-        <div className="container--component">
-          <h2>Button</h2>
-          <Button value="Animate me" animate={true} icon={<IconClose />} />
-        </div>
-        <div className="container--component">
-          <h2>Tags</h2>
-          <Tags />
-        </div>
-        <div className="container--component">
-          <h2>Pagination</h2>
-          <Pagination />
-        </div>
-        <div className="container--component">
-          <h2>Transfom property exercise</h2>
-          <TransformExe />
-        </div>
-        <div className="container--component">
-          <h2>Flex exercise</h2>
-          <FlexExe />
-        </div>
-        <div className="container--component">
-          <h2>Responsive grid</h2>
-          <CardGrid />
-        </div>
-        <div className="container--component">
-          <h2>Responsive grid 2</h2>
-          <CardGrid2 />
-        </div>
-      </div>
+      <RouterProvider router={router} />
     </div>
   );
 };
