@@ -4,6 +4,7 @@ import Exe from "./pages/exe";
 import Home from "./pages/home";
 import Ispit from "./pages/ispit";
 import Mlinar from "./pages/mlinar";
+import Petlje from "./pages/petlje";
 import Varijable from "./pages/varijable";
 
 import "./styles/styles.scss";
@@ -29,6 +30,10 @@ const App = () => {
     {
       path: "/varijable",
       element: <Varijable />,
+    },
+    {
+      path: "/petlje",
+      element: <Petlje />,
     },
   ]);
 
