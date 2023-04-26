@@ -8,6 +8,9 @@ const Home = () => {
           <li>
             <a href="/petlje">Petlje</a>
           </li>
+          <li>
+            <a href="/vjezba2604">Vjezba 2604</a>
+          </li>
         </ul>
       </div>
     </div>
