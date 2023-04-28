@@ -53,7 +53,6 @@ const Vjezba2604 = () => {
   };
 
   const recenica = `Ja imam predobar auto koji je ${car.marka} ${car.model} i ide ${car.maxBrzina} na sat. U njega točim ${car.tipMotora} i stopi se s travom jer mu je boja ${car.boja}.`;
-
   const printValue = (key: string) => {
     return car[key];
   };

@@ -7,6 +7,7 @@ import Mlinar from "./pages/mlinar";
 import Petlje from "./pages/petlje";
 import Varijable from "./pages/varijable";
 import Vjezba2604 from "./pages/vjezba2604";
+import Vjezba2804 from "./pages/vjezba2804";
 
 import "./styles/styles.scss";
 
@@ -39,6 +40,10 @@ const App = () => {
     {
       path: "/vjezba2604",
       element: <Vjezba2604 />,
+    },
+    {
+      path: "/vjezba2804",
+      element: <Vjezba2804 />,
     },
   ]);
 
