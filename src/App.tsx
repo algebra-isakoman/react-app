@@ -6,6 +6,7 @@ import Ispit from "./pages/ispit";
 import Mlinar from "./pages/mlinar";
 import Petlje from "./pages/petlje";
 import Varijable from "./pages/varijable";
+import Vjezba0305 from "./pages/vjezba0305";
 import Vjezba2604 from "./pages/vjezba2604";
 import Vjezba2804 from "./pages/vjezba2804";
 
@@ -44,6 +45,10 @@ const App = () => {
     {
       path: "/vjezba2804",
       element: <Vjezba2804 />,
+    },
+    {
+      path: "/vjezba0305",
+      element: <Vjezba0305 />,
     },
   ]);
 
