@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/header";
+import Breweries from "./pages/breweries";
 import Exe from "./pages/exe";
 import Home from "./pages/home";
 import Ispit from "./pages/ispit";
@@ -49,6 +50,10 @@ const App = () => {
     {
       path: "/vjezba0305",
       element: <Vjezba0305 />,
+    },
+    {
+      path: "/breweries",
+      element: <Breweries />,
     },
   ]);
 
