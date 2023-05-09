@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Ispit from "./pages/ispit";
 import Mlinar from "./pages/mlinar";
 import Petlje from "./pages/petlje";
+import Pokemons from "./pages/pokemons";
 import Varijable from "./pages/varijable";
 import Vjezba0305 from "./pages/vjezba0305";
 import Vjezba2604 from "./pages/vjezba2604";
@@ -54,6 +55,10 @@ const App = () => {
     {
       path: "/breweries",
       element: <Breweries />,
+    },
+    {
+      path: "/pokemons",
+      element: <Pokemons />,
     },
   ]);
 

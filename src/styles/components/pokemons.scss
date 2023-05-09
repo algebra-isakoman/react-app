@@ -1,0 +1,47 @@
+.pokemons {
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  &__input {
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid $gray;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__btn {
+    padding: 1rem;
+    display: block;
+    background-color: $green;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    border: none;
+    border-radius: $border-rounded;
+    color: $white;
+    font-weight: 600;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: $green-light;
+    }
+  }
+  &__color-box {
+    background-color: $gray;
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem;
+    margin-top: 2rem;
+    border-radius: $border-rounded;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -61,7 +61,11 @@ const Breweries = () => {
       <div>
         {data.length > 0 ? (
           data.map((brewery: BreweryType) => {
-            return <div key={brewery.id}>{brewery.name}</div>;
+            return (
+              <div key={brewery.id}>
+                {brewery.name}, {brewery.city}
+              </div>
+            );
           })
         ) : (
           <div>Nema niti jedna pivovara za zadani parametar</div>
