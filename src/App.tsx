@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/header";
 import Breweries from "./pages/breweries";
+import Europe from "./pages/europe";
+import EuropeCountry from "./pages/europe-country";
 import Exe from "./pages/exe";
 import Home from "./pages/home";
 import Ispit from "./pages/ispit";
@@ -59,6 +61,14 @@ const App = () => {
     {
       path: "/pokemons",
       element: <Pokemons />,
+    },
+    {
+      path: "/europe",
+      element: <Europe />,
+    },
+    {
+      path: "/europe/:capitalId",
+      element: <EuropeCountry />,
     },
   ]);
 
