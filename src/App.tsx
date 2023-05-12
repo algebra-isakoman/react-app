@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/header";
 import Breweries from "./pages/breweries";
+import Country from "./pages/country";
 import Europe from "./pages/europe";
 import EuropeCountry from "./pages/europe-country";
 import Exe from "./pages/exe";
@@ -69,6 +70,10 @@ const App = () => {
     {
       path: "/europe/:capitalId",
       element: <EuropeCountry />,
+    },
+    {
+      path: "/country",
+      element: <Country />,
     },
   ]);
 

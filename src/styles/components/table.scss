@@ -20,4 +20,17 @@
     width: 3rem;
     border: 1px solid $gray;
   }
+  &__cell {
+    &--center {
+      display: flex;
+      align-items: center;
+      svg {
+        display: flex;
+      }
+    }
+    &--space {
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
 }

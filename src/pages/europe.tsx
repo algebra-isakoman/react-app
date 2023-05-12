@@ -14,12 +14,23 @@ type FlagsType = {
   png: string;
   svg: string;
 };
+type MapType = {
+  googleMaps: string;
+};
+type CarType = {
+  signs: string[];
+  side: "right" | "left";
+};
 export type CountryType = {
   name: CountryNameType;
   flags: FlagsType;
   currencies: CurrenciesType;
   capital: string[];
   area: number;
+  maps: MapType;
+  population: number;
+  borders: string[];
+  car: CarType;
 };
 
 const Europe = () => {
