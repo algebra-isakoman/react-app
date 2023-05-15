@@ -12,6 +12,7 @@ import Petlje from "./pages/petlje";
 import Pokemons from "./pages/pokemons";
 import Varijable from "./pages/varijable";
 import Vjezba0305 from "./pages/vjezba0305";
+import Vjezba1505 from "./pages/vjezba1505";
 import Vjezba2604 from "./pages/vjezba2604";
 import Vjezba2804 from "./pages/vjezba2804";
 
@@ -74,6 +75,10 @@ const App = () => {
     {
       path: "/country",
       element: <Country />,
+    },
+    {
+      path: "/vjezba1505",
+      element: <Vjezba1505 />,
     },
   ]);
 
