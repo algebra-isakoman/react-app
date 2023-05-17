@@ -1,0 +1,76 @@
+.todo {
+  //Todo header
+  &__header {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  &__input {
+    padding: 0.5rem 1rem;
+    border: 1px solid $gray;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    background-color: $green;
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    transition: all 250ms ease;
+    &:hover {
+      background-color: $green-light;
+      cursor: pointer;
+    }
+  }
+  //Todo items
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid $gray;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &__wrapper {
+      max-width: 25rem;
+    }
+    &__remove {
+      cursor: pointer;
+      &:hover {
+        svg {
+          color: $red;
+          transform: scale(1.2);
+        }
+      }
+      svg {
+        display: flex;
+        transition: all 250ms ease;
+      }
+    }
+    &__label {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        height: 1px;
+        width: 0;
+        background-color: $gray-dark;
+        transition: all 250ms ease;
+      }
+    }
+  }
+}

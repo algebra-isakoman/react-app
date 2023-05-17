@@ -5,7 +5,7 @@ import { CountryType } from "./europe";
 const EuropeCountry = () => {
   let { capitalId } = useParams();
   const [countryData, setCountryData] = useState<CountryType>();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
   const getCountry = (capitalId: string) => {
     fetch(`https://restcountries.com/v3.1/capital/${capitalId}`)

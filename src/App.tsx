@@ -10,6 +10,7 @@ import Ispit from "./pages/ispit";
 import Mlinar from "./pages/mlinar";
 import Petlje from "./pages/petlje";
 import Pokemons from "./pages/pokemons";
+import Todo from "./pages/todo";
 import Varijable from "./pages/varijable";
 import Vjezba0305 from "./pages/vjezba0305";
 import Vjezba1505 from "./pages/vjezba1505";
@@ -79,6 +80,10 @@ const App = () => {
     {
       path: "/vjezba1505",
       element: <Vjezba1505 />,
+    },
+    {
+      path: "/todo",
+      element: <Todo />,
     },
   ]);
 
