@@ -8,6 +8,7 @@ import Exe from "./pages/exe";
 import Home from "./pages/home";
 import Ispit from "./pages/ispit";
 import Mlinar from "./pages/mlinar";
+import ParcijalniIspitJs from "./pages/parcijalni-ispit-js";
 import Petlje from "./pages/petlje";
 import Pokemons from "./pages/pokemons";
 import Todo from "./pages/todo";
@@ -84,6 +85,10 @@ const App = () => {
     {
       path: "/todo",
       element: <Todo />,
+    },
+    {
+      path: "/parcijalni-ispit-js",
+      element: <ParcijalniIspitJs />,
     },
   ]);
 

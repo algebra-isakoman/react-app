@@ -35,6 +35,9 @@ const Home = () => {
           <li>
             <a href="/todo">Todo</a>
           </li>
+          <li>
+            <a href="/parcijalni-ispit-js">Parcijalni ispit JS</a>
+          </li>
         </ul>
       </div>
     </div>

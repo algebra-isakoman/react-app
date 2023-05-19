@@ -1,0 +1,87 @@
+.song {
+  &__input {
+    padding: 1rem;
+    padding-left: 2.5rem;
+    border: none;
+    border-bottom: 2px solid $gray-dark;
+    width: 100%;
+    font-size: 1.25rem;
+    &::placeholder {
+      color: $gray;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      button {
+        border: none;
+        background-color: $green;
+        color: white;
+        padding: 1rem 1rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 250ms ease;
+
+        &:hover {
+          background-color: $green-light;
+        }
+      }
+      svg {
+        position: absolute;
+        top: 0.75rem;
+        left: 0;
+      }
+      position: relative;
+    }
+  }
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    @media (min-width: 550px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 950px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $gray-darker;
+    color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    &__body {
+      padding: 2rem;
+      display: grid;
+      flex-grow: 1;
+    }
+    audio {
+      width: 100%;
+      transform: scale(1.05);
+    }
+    &__name {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    &__genre {
+      color: $gray-dark;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &__img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
