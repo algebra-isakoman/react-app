@@ -15,7 +15,6 @@ const ParcijalniIspitJs = () => {
   const [data, setData] = useState<DataType[] | null>(null);
   const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
-  const test = 2;
 
   const getData = (searchTerm: string) => {
     fetch(`https://itunes.apple.com/search?term=${searchTerm}&entity=song`)
