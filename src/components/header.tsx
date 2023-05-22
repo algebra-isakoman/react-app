@@ -10,8 +10,8 @@ const Header = () => {
         </div>
         <div className="header__actions">
           <nav className="header__nav">
-            <a className="header__nav__item" href="/">
-              Homeeeeeeeeeeee
+            <a className="header__nav__item test" href="/">
+              Homeeee
             </a>
             <a className="header__nav__item" href="/exe">
               Exercises
