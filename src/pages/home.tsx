@@ -38,6 +38,9 @@ const Home = () => {
           <li>
             <a href="/parcijalni-ispit-js">Parcijalni ispit JS</a>
           </li>
+          <li>
+            <a href="/bikes">Bikes</a>
+          </li>
         </ul>
       </div>
     </div>
