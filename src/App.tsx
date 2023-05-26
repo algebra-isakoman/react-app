@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/header";
-import Bikes from "./pages/bikes";
+import Bikes from "./pages/bikes/bikes";
 import Breweries from "./pages/breweries";
 import Country from "./pages/country";
 import Europe from "./pages/europe";
