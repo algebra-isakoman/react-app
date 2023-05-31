@@ -1,0 +1,87 @@
+.bootstrap {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tab {
+    &__content {
+      padding: 2rem 0;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  &__card {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 11px -5px #b1b1b1;
+    &--mt {
+      margin-top: 2rem;
+    }
+  }
+  &__text {
+    &--big {
+      font-size: 4rem;
+    }
+    &--md {
+      font-size: 1.5rem;
+    }
+    &--sub {
+      opacity: 0.5;
+    }
+    &--right {
+      text-align: right;
+    }
+  }
+  &__game {
+    &__title {
+      margin-bottom: 2rem;
+      input {
+        border: none;
+        border-bottom: 1px solid #cecece;
+        font-size: 1.5rem;
+      }
+    }
+    &__row {
+      margin-bottom: 2rem;
+    }
+    &__line {
+      position: relative;
+      &::before {
+        content: "Finish";
+        display: block;
+        padding: 0.25rem 1rem;
+        background-color: #cecece;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 175px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        height: 8rem;
+        width: 2px;
+        background-color: #cecece;
+        position: absolute;
+        right: 175px;
+        top: 0;
+      }
+    }
+    &__player {
+      margin-bottom: -1.5rem;
+    }
+    &__grass {
+      height: 2rem;
+      width: 100%;
+      background-image: url("./../assets/grass.png");
+    }
+  }
+}
+.btn {
+  color: white;
+}

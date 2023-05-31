@@ -4,6 +4,7 @@
 
 //components
 @import "./components/bikes.scss";
+@import "./components/bootstrap.scss";
 @import "./components/box.scss";
 @import "./components/button.scss";
 @import "./components/card.scss";
@@ -19,3 +20,6 @@
 @import "./components/tags.scss";
 @import "./components/todo.scss";
 @import "./components/toggle.scss";
+
+//Bootstrap styles
+@import "node_modules/bootstrap/scss/bootstrap";

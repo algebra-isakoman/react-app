@@ -1,4 +1,4 @@
-.modal {
+.custom-modal {
   z-index: 100;
   position: fixed;
   width: 80vw;
@@ -72,5 +72,9 @@
     left: 0;
     bottom: 0;
     right: 0;
+  }
+  &__title {
+    font-size: 3rem;
+    margin: 2rem auto;
   }
 }

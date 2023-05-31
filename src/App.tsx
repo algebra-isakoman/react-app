@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/header";
 import Bikes from "./pages/bikes/bikes";
+import Bootstrap from "./pages/bootstrap/bootstrap";
 import Breweries from "./pages/breweries";
 import Country from "./pages/country";
 import Europe from "./pages/europe";
@@ -94,6 +95,10 @@ const App = () => {
     {
       path: "/bikes",
       element: <Bikes />,
+    },
+    {
+      path: "/bootstrap",
+      element: <Bootstrap />,
     },
   ]);
 

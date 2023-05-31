@@ -53,29 +53,34 @@ const Bikes = () => {
       {activeBike ? (
         <>
           <div
-            className="modal__overlay"
+            className="custom-modal__overlay"
             onClick={() => setActiveBike(null)}
           ></div>
-          <div className="modal">
-            <div className="modal__header">
-              <div className="modal__header__title">{activeBike.type} Bike</div>
-              <div className="modal__close" onClick={() => setActiveBike(null)}>
+          <div className="custom-modal">
+            <div className="custom-modal__header">
+              <div className="custom-modal__header__title">
+                {activeBike.type} Bike
+              </div>
+              <div
+                className="custom-modal__close"
+                onClick={() => setActiveBike(null)}
+              >
                 <IconClose />
               </div>
             </div>
-            <div className="modal__body">
-              <div className="modal__favorite">
+            <div className="custom-modal__body">
+              <div className="custom-modal__favorite">
                 <IconFavorite
                   active={handleShowFavorite(activeBike.id)}
                   width={42}
                 />
               </div>
               <img src={activeBike.img} alt={activeBike.type} />
-              <div className="modal__body__content">
-                <p className="modal__body__subtitle">
+              <div className="custom-modal__body__content">
+                <p className="custom-modal__body__subtitle">
                   {activeBike.description.substring(0, 85)}...
                 </p>
-                <p className="modal__body__text">
+                <p className="custom-modal__body__text">
                   {activeBike.longDescription}
                 </p>
               </div>

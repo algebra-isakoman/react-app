@@ -41,6 +41,9 @@ const Home = () => {
           <li>
             <a href="/bikes">Bikes</a>
           </li>
+          <li>
+            <a href="/bootstrap">Bootstrap</a>
+          </li>
         </ul>
       </div>
     </div>
