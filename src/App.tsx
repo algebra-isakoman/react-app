@@ -8,6 +8,7 @@ import Europe from "./pages/europe";
 import EuropeCountry from "./pages/europe-country";
 import Exe from "./pages/exe";
 import Home from "./pages/home";
+import Instagram from "./pages/instagram/instagram";
 import Ispit from "./pages/ispit";
 import Mlinar from "./pages/mlinar";
 import ParcijalniIspitJs from "./pages/parcijalni-ispit-js";
@@ -99,6 +100,10 @@ const App = () => {
     {
       path: "/bootstrap",
       element: <Bootstrap />,
+    },
+    {
+      path: "/instagram",
+      element: <Instagram />,
     },
   ]);
 

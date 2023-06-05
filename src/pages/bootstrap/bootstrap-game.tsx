@@ -1,7 +1,7 @@
 import robot from "./../../assets/robot.png";
 import cool from "./../../assets/cool.png";
 import { useState } from "react";
-import { Button } from "react-bootstrap";
+//import { Button } from "react-bootstrap";
 import Player from "./components/player";
 
 const movingSpeed = 10;
@@ -118,9 +118,9 @@ const BootstrapGame = () => {
             ></div>
             <div className="custom-modal">
               <div className="custom-modal__title">Pobjedio je {winner}</div>
-              <Button variant="success" onClick={() => handleReset()}>
+              {/* <Button variant="success" onClick={() => handleReset()}>
                 Reset
-              </Button>
+              </Button> */}
             </div>
           </>
         ) : (

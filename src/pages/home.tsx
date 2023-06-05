@@ -42,7 +42,12 @@ const Home = () => {
             <a href="/bikes">Bikes</a>
           </li>
           <li>
-            <a href="/bootstrap">Bootstrap</a>
+            <a href="/bootstrap">
+              Bootstrap - ne radi jer smo obrisali bootstrap
+            </a>
+          </li>
+          <li>
+            <a href="/instagram">Instagram</a>
           </li>
         </ul>
       </div>

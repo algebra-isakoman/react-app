@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Button, Tab, Tabs } from "react-bootstrap";
+// import { Button, Tab, Tabs } from "react-bootstrap";
 import BootstrapDashboard from "./bootstrap-dashboard";
 import BootstrapGame from "./bootstrap-game";
 
@@ -25,10 +25,10 @@ const Bootstrap = () => {
       <div className="container">
         <div className="bootstrap__head">
           <h1>Hello bootstrap</h1>
-          <Button variant="warning">Click me</Button>
+          {/* <Button variant="warning">Click me</Button> */}
         </div>
         <hr />
-        <Tabs defaultActiveKey={tabData[0].label}>
+        {/* <Tabs defaultActiveKey={tabData[0].label}>
           {tabData.map((tab) => {
             return (
               <Tab key={tab.label} eventKey={tab.label} title={tab.label}>
@@ -36,7 +36,7 @@ const Bootstrap = () => {
               </Tab>
             );
           })}
-        </Tabs>
+        </Tabs> */}
       </div>
     </>
   );

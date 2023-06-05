@@ -1,4 +1,4 @@
-import { ProgressBar } from "react-bootstrap";
+// import { ProgressBar } from "react-bootstrap";
 
 const InfoCard = () => {
   return (
@@ -10,7 +10,8 @@ const InfoCard = () => {
           <div className="bootstrap__text--sub">Koji nešto obješnjava</div>
         </div>
       </div>
-      <ProgressBar animated now={45} />
+      {/* 
+      <ProgressBar animated now={45} /> */}
     </>
   );
 };

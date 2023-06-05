@@ -6,15 +6,17 @@
 @import "./components/bikes.scss";
 @import "./components/bootstrap.scss";
 @import "./components/box.scss";
-//@import "./components/button.scss";
+@import "./components/button.scss";
 @import "./components/card.scss";
 @import "./components/container.scss";
+@import "./components/field.scss";
 @import "./components/flex.scss";
 @import "./components/header.scss";
 @import "./components/input.scss";
 @import "./components/modal.scss";
 @import "./components/pagination.scss";
 @import "./components/pokemons.scss";
+@import "./components/post.scss";
 @import "./components/song.scss";
 @import "./components/table.scss";
 @import "./components/tags.scss";
@@ -22,4 +24,4 @@
 @import "./components/toggle.scss";
 
 //Bootstrap styles
-@import "node_modules/bootstrap/scss/bootstrap";
+//@import "node_modules/bootstrap/scss/bootstrap";
